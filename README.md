@@ -9,7 +9,7 @@ See example program.
 
 ## Example of object declaration
 
-```lua
+```cpp
 #define CLK_PIN 3 // Defines input for the clock pin
 #define DT_PIN 10 // Defines input for the direction pin
 #define BTN_PIN 11 // Defines input for the button pin
@@ -26,7 +26,9 @@ void encoderISR(void)
 
 ## Detectable actions
 
-```lua
+The detectable actions of the Rotary Encoder, that are present for one cycle only in the action variable of the object, are the following:
+
+```cpp
 enum eRotaryEncoder
 {
   RE_NONE = 0,  // No action has been detectet
@@ -43,13 +45,13 @@ enum eRotaryEncoder
 The timings for the detection of the actions are set by some defines.
 If necesary this defines can be redifened in your code.
 This defines are the following:
-* TIME_SHORT (minimum time for RE_SHORT detection [ms])
-* TIME_LONG (minimum time for RE_LONG detection [ms])
-* DOUBLE_DELAY (maximum time between two pushes of the button for RE_DOUBLE detection [ms])
-* DEBOUNCE_TIME (debounce time for all signals [ms])
+* `TIME_SHORT` (minimum time for `RE_SHORT` detection [ms])
+* `TIME_LONG` (minimum time for `RE_LONG` detection [ms])
+* `DOUBLE_DELAY` (maximum time between two pushes of the button for `RE_DOUBLE` detection [ms])
+* `DEBOUNCE_TIME` (debounce time for all input signals [ms])
 
 Example of redefinition of the timings (with default values):
-```lua
+```cpp
 #define TIME_SHORT 100
 #define TIME_LONG 800
 #define DOUBLE_DELAY 200
