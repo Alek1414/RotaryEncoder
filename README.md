@@ -1,5 +1,4 @@
-Rotary Encoder class
---------------------
+# Rotary Encoder class
 
 Contains a class to detect different actions of a Rotary Encoder.
 After initialization of the `RotaryEncoder` object, the `check` method must be called cyclically so the action is detected and the `action` variable is updated.
@@ -7,7 +6,7 @@ This variable shows the detected action for one cycle only.
 A function containing a call to the `clk_isr()` method must be created and assigned in the declaration of the `RotaryEncoder` object.
 See example program.
 
-## Example of object declaration
+## Example of the object declaration
 
 ```cpp
 #define CLK_PIN 3 // Defines input for the clock pin
