@@ -1,7 +1,7 @@
 # Rotary Encoder class
 
 This Arduino library contains a class to detect different actions of a Rotary Encoder.
-It works with any encoder with the following signals:
+It works with any encoder thas has the following signals:
 * Push button
 * Encoder clock
 * Encoder direction
