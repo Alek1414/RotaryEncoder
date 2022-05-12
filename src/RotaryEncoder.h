@@ -1,5 +1,5 @@
 /*
-  KY-040 rotary encoder class
+  Rotary Encoder class
 
   Contains a class to detect different actions of a Rotary Encoder.
   After initialization of the 'RotaryEncoder' object, the 'check' method 

@@ -1,6 +1,11 @@
 # Rotary Encoder class
 
-Contains a class to detect different actions of a Rotary Encoder.
+This Arduino library contains a class to detect different actions of a Rotary Encoder.
+It works with any encoder with the following signals:
+* Push button
+* Encoder clock
+* Encoder direction
+
 After initialization of the `RotaryEncoder` object, the `check` method must be called cyclically so the action is detected and the `action` variable is updated.
 This variable shows the detected action for one cycle only.
 A function containing a call to the `clk_isr()` method must be created and assigned in the declaration of the `RotaryEncoder` object.
