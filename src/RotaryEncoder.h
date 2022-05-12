@@ -54,12 +54,12 @@
 // Status list which the Rotary Encoder can have
 enum eRotaryEncoder
 {
-  RE_NONE = 0,  // No action has been detectet
-  RE_CW,        // Rotate Rotary Encoder CW
-  RE_CCW,       // Rotate Rotary Encoder CCW
-  RE_SHORT,     // Press Rotary Encoder button for a short period
-  RE_LONG,      // Press Rotary Encoder button for a long period
-  RE_DOUBLE     // Double press Rotary Encoder button
+  RE_NONE = 0,  // No action detectet
+  RE_CW,        // CW rotation
+  RE_CCW,       // CCW rotation
+  RE_SHORT,     // Button pressed for a short period
+  RE_LONG,      // Button pressed for a long period
+  RE_DOUBLE     // Button pressed two times
 };
 
 class RotaryEncoder

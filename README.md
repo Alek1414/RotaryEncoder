@@ -30,17 +30,17 @@ void encoderISR(void)
 
 ## Detectable actions
 
-The detectable actions of the Rotary Encoder, that are present for one cycle only in the action variable of the object, are the following:
+The detectable actions of the Rotary Encoder, that are present for one cycle only in the `action` variable of the object, are the following:
 
 ```cpp
 enum eRotaryEncoder
 {
-  RE_NONE = 0,  // No action has been detectet
-  RE_CW,        // Rotate Rotary Encoder CW
-  RE_CCW,       // Rotate Rotary Encoder CCW
-  RE_SHORT,     // Press Rotary Encoder button for a short period
-  RE_LONG,      // Press Rotary Encoder button for a long period
-  RE_DOUBLE     // Double press Rotary Encoder button
+  RE_NONE = 0,  // No action detectet
+  RE_CW,        // CW rotation
+  RE_CCW,       // CCW rotation
+  RE_SHORT,     // Button pressed for a short period
+  RE_LONG,      // Button pressed for a long period
+  RE_DOUBLE     // Button pressed two times
 };
 ```
 
@@ -54,7 +54,7 @@ This defines are the following:
 * `DOUBLE_DELAY` (maximum time between two pushes of the button for `RE_DOUBLE` detection [ms])
 * `DEBOUNCE_TIME` (debounce time for all input signals [ms])
 
-Example of redefinition of the timings (with default values):
+Example of redefinition of the timings (here with default values):
 ```cpp
 #define TIME_SHORT 100
 #define TIME_LONG 800
