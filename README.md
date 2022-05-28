@@ -1,7 +1,7 @@
-# Rotary Encoder class
+# Rotary Encoder library
 
 This Arduino library contains a class to detect different actions of a Rotary Encoder.
-It works with any encoder with the following signals:
+It works with any encoder thas has the following signals:
 * Push button
 * Encoder clock
 * Encoder direction
@@ -11,7 +11,7 @@ This variable shows the detected action for one cycle only.
 A function containing a call to the `clk_isr()` method must be created and assigned in the declaration of the `RotaryEncoder` object.
 See example program.
 
-## Example of the object declaration
+### Example of the object declaration
 
 ```cpp
 #define CLK_PIN 3 // Defines input for the clock pin
@@ -28,7 +28,7 @@ void encoderISR(void)
 }
 ```
 
-## Detectable actions
+### Detectable actions
 
 The detectable actions of the Rotary Encoder, that are present for one cycle only in the `action` variable of the object, are the following:
 
@@ -44,7 +44,7 @@ enum eRotaryEncoder
 };
 ```
 
-## Timings for the detection of the actions
+### Timings for the detection of the actions
 
 The timings for the detection of the actions are set by some defines.
 If necesary this defines can be redifened in your code.
