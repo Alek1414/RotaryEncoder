@@ -83,8 +83,8 @@ class RotaryEncoder
     bool encoder_direction;
     unsigned long last_pressed;
     bool btn_last_value;
-    bool btn_pressed;
     bool first_encoder_short;
+    void (*clk_isr_function)(void);
 };
 
 #endif

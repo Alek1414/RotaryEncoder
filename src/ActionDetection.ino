@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <RotaryEncoder.h>
+#include "RotaryEncoder.h"
 
 #define CLK_PIN 3 // Defines input for the clock pin
 #define DT_PIN 10 // Defines input for the direction pin
