@@ -23,7 +23,7 @@ RotaryEncoder::RotaryEncoder(   byte clk,
     pinMode(this->btn_pin, INPUT_PULLUP);
 
     this->action = RE_NONE;
-    attachInterrupt(digitalPinToInterrupt(this->clk_pin), this->clk_isr_function, RISING);
+    attachInterrupt(digitalPinToInterrupt(this->clk_pin), this->clk_isr_function, CHANGE);
 }
 
 void RotaryEncoder::check(void)
